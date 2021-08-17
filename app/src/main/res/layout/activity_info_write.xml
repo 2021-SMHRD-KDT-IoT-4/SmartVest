@@ -7,7 +7,7 @@
     tools:context=".InfoWriteActivity">
 
     <EditText
-        android:id="@+id/et_infotitle"
+        android:id="@+id/et_infoTitle"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_infowrite"
+        android:id="@+id/et_infoWrite"
         android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_marginTop="24dp"
@@ -28,9 +28,9 @@
         android:gravity="top|left"
         android:hint=" 내용을 입력하세요."
         android:inputType="textMultiLine|textNoSuggestions"
-        app:layout_constraintEnd_toEndOf="@+id/et_infotitle"
-        app:layout_constraintStart_toStartOf="@+id/et_infotitle"
-        app:layout_constraintTop_toBottomOf="@+id/et_infotitle" />
+        app:layout_constraintEnd_toEndOf="@+id/et_infoTitle"
+        app:layout_constraintStart_toStartOf="@+id/et_infoTitle"
+        app:layout_constraintTop_toBottomOf="@+id/et_infoTitle" />
 
     <Button
         android:id="@+id/btn_infoNo"
@@ -39,7 +39,7 @@
         android:layout_marginBottom="32dp"
         android:text="취소"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/et_infowrite" />
+        app:layout_constraintStart_toStartOf="@+id/et_infoWrite" />
 
     <Button
         android:id="@+id/btn_infoOk"
@@ -48,6 +48,6 @@
         android:layout_marginStart="8dp"
         android:text="등록"
         app:layout_constraintBottom_toBottomOf="@+id/btn_infoNo"
-        app:layout_constraintEnd_toEndOf="@+id/et_infowrite"
+        app:layout_constraintEnd_toEndOf="@+id/et_infoWrite"
         app:layout_constraintStart_toEndOf="@+id/btn_infoNo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
